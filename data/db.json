@@ -1,0 +1,61 @@
+{
+    "sevenDayForecast": [
+        {
+            "day": "Tomorrow",
+            "weather": "Cloudy",
+            "degree": "25°"
+        },
+        {
+            "day": "Wednesday",
+            "weather": "Rainy",
+            "degree": "18°"
+        },
+        {
+            "day": "Thursday",
+            "weather": "Partly Cloudy",
+            "degree": "28°"
+        },
+        {
+            "day": "Friday",
+            "weather": "Sunny",
+            "degree": "32°"
+        },
+        {
+            "day": "Saturday",
+            "weather": "Thunderstorms",
+            "degree": "22°"
+        },
+        {
+            "day": "Sunday",
+            "weather": "Partly Cloudy",
+            "degree": "27°"
+        }
+    ],
+    "todaysForecast": [
+        {
+            "time": "8:00 AM",
+            "weather": "Sunny",
+            "degree": "12°"
+        },
+        {
+            "time": "12:00 PM",
+            "weather": "Partly Cloudy",
+            "degree": "18°"
+        },
+        {
+            "time": "4:00 PM",
+            "weather": "Cloudy",
+            "degree": "22°"
+        },
+        {
+            "time": "8:00 PM",
+            "weather": "Partly Cloudy",
+            "degree": "16°"
+        },
+        {
+            "time": "12:00 AM",
+            "weather": "Rainy",
+            "degree": "10°"
+        }
+    ]
+}
