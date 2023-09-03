@@ -1,6 +1,12 @@
 {
   "sevenDayForecast": [
     {
+      "day": "Today",
+      "weather": "Cloudy",
+      "degree": "23°",
+      "id": "03d"
+    },
+    {
       "day": "Tomorrow",
       "weather": "Cloudy",
       "degree": "25°",

@@ -18,22 +18,21 @@ function App() {
     }
   };
   
-  console.log(weather);
   return (
-    <div className="w-screen h-screen bg-obsidian flex justify-center items-center">
-      <div className="w-1200 text-white grid grid-cols-body grid-rows-body gap-x-50 justify-items-center items-center">
-            <Navbar />
-            <input 
-              type="text" 
-              placeholder="Search for cities" 
-              className="self-start border-0 bg-light-obsidian h-50 w-600 rounded-2xl p-4 outline-none"
-              onKeyUp={handleEnterPress}
-            />
-            {isPending && <p>Loading...</p>}
-            {error && <p className="col-start-2 row-start-2">{error}</p>}
-            {weather && <SevenDayForecast weatherIcons={weatherIcons} />}
-            {weather && <Forecast weather={weather} weatherIcons={weatherIcons} />}
-        </div>
+    <div className="w-screen h-screen flex justify-center items-center">
+      <div className="w-1300 h-9/12 bg-obsidian text-white grid grid-cols-body grid-rows-body gap-x-50 justify-items-center items-center">
+          <Navbar />
+          <input 
+            type="text" 
+            placeholder="Search for cities" 
+            className="self-start border-0 bg-light-obsidian h-50 w-600 rounded-2xl p-4 outline-none"
+            onKeyUp={handleEnterPress}
+          />
+          {isPending && <p>Loading...</p>}
+          {error && <p className="col-start-2 row-start-2">{error}</p>}
+          {weather && <SevenDayForecast weatherIcons={weatherIcons} />}
+          {weather && <Forecast weather={weather} weatherIcons={weatherIcons} />}
+      </div>
     </div>
   );
 }

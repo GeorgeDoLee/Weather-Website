@@ -1,12 +1,10 @@
 import TodaysForecast from "./TodaysForecast";
-import useFetch from "../hooks/useFetch";
-import { useState } from "react";
 
 const Forecast = ({weather, weatherIcons}) => {
 
     return (  
         <div className="self-stretch grid grid-rows-2 justify-center items-center  gap-3">
-            <div className="self-end">
+            <div className="self-center">
                 <div className="grid grid-cols-2 grid-rows-2 h-250 pl-30">
                     <div className="self-start justify-self-start">
                         <div className="text-6xl">{weather.name}</div>
