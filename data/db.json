@@ -1,61 +1,67 @@
 {
-    "sevenDayForecast": [
-        {
-            "day": "Tomorrow",
-            "weather": "Cloudy",
-            "degree": "25°"
-        },
-        {
-            "day": "Wednesday",
-            "weather": "Rainy",
-            "degree": "18°"
-        },
-        {
-            "day": "Thursday",
-            "weather": "Partly Cloudy",
-            "degree": "28°"
-        },
-        {
-            "day": "Friday",
-            "weather": "Sunny",
-            "degree": "32°"
-        },
-        {
-            "day": "Saturday",
-            "weather": "Thunderstorms",
-            "degree": "22°"
-        },
-        {
-            "day": "Sunday",
-            "weather": "Partly Cloudy",
-            "degree": "27°"
-        }
-    ],
+  "sevenDayForecast": [
+    {
+      "day": "Tomorrow",
+      "weather": "Cloudy",
+      "degree": "25°",
+      "id": "03d"
+    },
+    {
+      "day": "Wednesday",
+      "weather": "Rainy",
+      "degree": "18°",
+      "id": "10d"
+    },
+    {
+      "day": "Thursday",
+      "weather": "Partly Cloudy",
+      "degree": "28°",
+      "id": "02d"
+    },
+    {
+      "day": "Friday",
+      "weather": "Sunny",
+      "degree": "32°",
+      "id": "01d"
+    },
+    {
+      "day": "Saturday",
+      "weather": "Thunderstorms",
+      "degree": "22°",
+      "id": "11d"
+    },
+    {
+      "day": "Sunday",
+      "weather": "Partly Cloudy",
+      "degree": "27°",
+      "id": "02d"
+    }
+  ],
     "todaysForecast": [
         {
-            "time": "8:00 AM",
-            "weather": "Sunny",
-            "degree": "12°"
+          "time": "8:00 AM",
+          "id": "01d",
+          "degree": "12°"
         },
         {
-            "time": "12:00 PM",
-            "weather": "Partly Cloudy",
-            "degree": "18°"
+          "time": "12:00 PM",
+          "id": "02d",
+          "degree": "18°"
         },
         {
-            "time": "4:00 PM",
-            "weather": "Cloudy",
-            "degree": "22°"
+          "time": "4:00 PM",
+          "id": "03d",
+          "degree": "22°"
         },
         {
-            "time": "8:00 PM",
-            "weather": "Partly Cloudy",
-            "degree": "16°"
+          "time": "8:00 PM",
+          "id": "02n",
+          "degree": "16°"
         },
         {
-            "time": "12:00 AM",
-            "weather": "Rainy",
-            "degree": "10°"
+          "time": "12:00 AM",
+          "id": "10n",
+          "degree": "10°"
         }
-    ]
+      ]
 }

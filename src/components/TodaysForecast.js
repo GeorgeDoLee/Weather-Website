@@ -1,4 +1,3 @@
-import loading from '../svg/loading.svg'
 import useFetch from '../hooks/useFetch';
 
 const TodaysForecast = ({weatherIcons}) => {
@@ -14,7 +13,7 @@ const TodaysForecast = ({weatherIcons}) => {
                 {hours && hours.map((hour) => (
                     <div className='flex flex-col gap-2 justify-center items-center'>
                         <div>{hour.time}</div>
-                        <img src={weatherIcons[hour.weather]} alt="icon not found" title={hour.weather} className='h-80 w-80'/>
+                        <img src={weatherIcons[hour.id]} alt="icon not found" title={hour.weather} className='h-80 w-80'/>
                         <div>{hour.degree}</div>
                     </div>
                 ))}

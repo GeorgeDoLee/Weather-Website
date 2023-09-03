@@ -13,7 +13,7 @@ const SevenDayForecast = ({weatherIcons}) => {
                 <div className="self-center justify-self-center grid grid-cols-3 justify-center items-center w-350 border-b-2 last:border-b-0 pb-4">
                     <h5 className="justify-self-start">{day.day}</h5>
                     <div className="flex flex-col justify-center items-center">
-                        <img src={weatherIcons[day.weather]} alt="icon not found" className="h-40"/>
+                        <img src={weatherIcons[day.id]} alt="icon not found" className="h-40"/>
                         <h6 className="text-sm">{day.weather}</h6>
                     </div>
                     <h4 className="justify-self-center">{day.degree}</h4>
