@@ -14,7 +14,7 @@ module.exports = {
       }, 
       gridTemplateRows: {
         'body': '1fr 10fr',
-        'forecast': '1fr 10fr',
+        'forecast': '2fr 10fr',
       },
       spacing: {
         '10': '10px',
@@ -25,6 +25,7 @@ module.exports = {
         '60': '60px',
         '70': '70px',
         '80': '80px',
+        '85': '85px',
         '90': '90px',
         '100': '100px',
         '200': '200px',

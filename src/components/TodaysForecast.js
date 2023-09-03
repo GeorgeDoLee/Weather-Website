@@ -4,7 +4,7 @@ const TodaysForecast = ({weatherIcons}) => {
     const { data: hours, isPending, error } = useFetch('http://localhost:8000/todaysForecast');
 
     return (  
-        <div className='self-end w-600 h-250 bg-light-obsidian grid grid-rows-forecast gap-10 justify-center items-center p-10 rounded-2xl'>
+        <div className='self-end w-600 h-250 bg-light-obsidian grid grid-rows-forecast justify-center items-center p-10 rounded-2xl'>
             <h1 className='ml-4 '>Today's Forecast</h1>
 
             {isPending && <p>Loading...</p>}

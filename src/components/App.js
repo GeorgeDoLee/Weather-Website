@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch";
 import Navbar from "./Navbar";
 import Forecast from "./Forecast";
 import SevenDayForecast from "./SevenDayForecast";
-import weatherIcons from "../assets/icons";
+import weatherIcons from "../assets/weather-icons/icons";
 
 function App() {
   const apiKey = "ddcaa1c34d46125ca8d63b5bc99789ad";
@@ -20,7 +20,7 @@ function App() {
   
   return (
     <div className="w-screen h-screen flex justify-center items-center">
-      <div className="w-1300 h-9/12 bg-obsidian text-white grid grid-cols-body grid-rows-body gap-x-50 justify-items-center items-center">
+      <div className="w-1300 h-650 bg-obsidian text-white grid grid-cols-body grid-rows-body gap-x-50 justify-items-center items-center">
           <Navbar />
           <input 
             type="text" 
