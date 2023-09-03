@@ -10,7 +10,7 @@ const SevenDayForecast = ({weatherIcons}) => {
             {isPending && <p>Loading...</p>}
             {error && <p>{error}</p> }
             {days && days.map((day) => ( 
-                <div className="self-start justify-self-center grid grid-cols-3 justify-center items-center w-350 border-b-2 last:border-b-0 py-3">
+                <div className="self-center justify-self-center grid grid-cols-3 justify-center items-center w-350 border-b-2 last:border-b-0 pb-4">
                     <h5 className="justify-self-start">{day.day}</h5>
                     <div className="flex flex-col justify-center items-center">
                         <img src={weatherIcons[day.weather]} alt="icon not found" className="h-40"/>

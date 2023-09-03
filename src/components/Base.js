@@ -17,7 +17,7 @@ const Base = () => {
     };
 
     return (  
-        <div className="w-fit text-white grid grid-cols-body grid-rows-body gap-x-50 justify-items-center items-center">
+        <div className="w-1200 text-white grid grid-cols-body grid-rows-body gap-x-50 justify-items-center items-center">
             <Navbar />
             <input type="text" placeholder="Search for cities" className="self-start border-0 bg-light-obsidian h-50 w-600 rounded-2xl p-4 outline-none" />
             <SevenDayForecast weatherIcons={weatherIcons} />
