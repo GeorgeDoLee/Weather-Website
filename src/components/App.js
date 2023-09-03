@@ -25,7 +25,7 @@ function App() {
           <input 
             type="text" 
             placeholder="Search for cities" 
-            className="self-start border-0 bg-light-obsidian h-50 w-600 rounded-2xl p-4 outline-none"
+            className="self-start border-0 bg-light-obsidian h-50 w-600 rounded-2xl p-4 outline-none bg-opacity-50"
             onKeyUp={handleEnterPress}
           />
           {isPending && <p>Loading...</p>}

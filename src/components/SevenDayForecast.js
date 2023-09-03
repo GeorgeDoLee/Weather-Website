@@ -4,7 +4,7 @@ const SevenDayForecast = ({weatherIcons}) => {
     const { data: days, isPending, error } = useFetch('http://localhost:8000/sevenDayForecast');
 
     return (
-        <div className="self-stretch row-span-2 bg-light-obsidian w-400 grid gric-rows-8 p-20 rounded-xl ">
+        <div className="self-stretch row-span-2 bg-light-obsidian w-400 grid gric-rows-8 p-20 rounded-xl bg-opacity-50">
             <h1>7-Day Forecast</h1>
 
             {isPending && <p>Loading...</p>}

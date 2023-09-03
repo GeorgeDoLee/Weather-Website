@@ -14,7 +14,7 @@ const Navbar = () => {
     ])
 
     return (  
-        <div className='self-stretch row-span-2 bg-light-obsidian p-8 w-100 rounded-3xl grid grid-rows-body justify-center items-center'>
+        <div className='self-stretch row-span-2 bg-light-obsidian p-8 w-100 rounded-3xl grid grid-rows-body justify-center items-center bg-opacity-50'>
             <img src={logo} alt="icon not found" />
 
             <nav className=" flex flex-col gap-50 justify-center items-center ">
