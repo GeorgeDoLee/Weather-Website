@@ -125,5 +125,36 @@
       },
       "weather": "Partly Cloudy"
     }
-  ]
+  ],
+    "georgianCities": [
+      "Tbilisi",
+      "Kutaisi",
+      "Batumi",
+      "Rustavi",
+      "Gori",
+      "Zugdidi",
+      "Poti",
+      "Samtredia",
+      "Khashuri",
+      "Senaki",
+      "Marneuli",
+      "Akhaltsikhe",
+      "Kobuleti",
+      "Tsqaltubo",
+      "Telavi",
+      "Akhaltsikhe",
+      "Ozurgeti",
+      "Borjomi",
+      "Kaspi",
+      "Tsageri",
+      "Tskhinvali",
+      "Ambrolauri",
+      "Khoni",
+      "Bolnisi",
+      "Sagarejo",
+      "Gardabani",
+      "Dusheti",
+      "Lentekhi",
+      "Sachkhere"
+    ]
 }

@@ -3,15 +3,15 @@ import useFetch from '../hooks/useFetch';
 import LoadingTodaysForecast from './loading-components/LoadingTodaysForecast';
 
 const TodaysForecast = ({weatherIcons, settings}) => {
-    const { data: hours, isPending, error } = useFetch('http://localhost:8000/todaysForecast');
+    const { data: hourly, isPending, error } = useFetch('http://localhost:8000/todaysForecast');
     const [animationIndex, setAnimationIndex] = useState(null);
 
     useEffect(() => {
-        if(hours && hours.length > 0){
+        if(hourly && hourly.length > 0){
             let animationIndex = 0;
     
             const animationInterval = setInterval(() => {
-                if (animationIndex < hours.length) {
+                if (animationIndex < hourly.length) {
                     setAnimationIndex(animationIndex);
                     animationIndex++;
                 } else {
@@ -22,7 +22,7 @@ const TodaysForecast = ({weatherIcons, settings}) => {
         
             return () => clearInterval(animationInterval);
         }
-    }, [hours]);
+    }, [hourly]);
 
     return (  
         <div className='self-end w-600 h-250 bg-light-obsidian grid grid-rows-forecast justify-center items-center p-10 rounded-2xl bg-opacity-50'>
@@ -31,7 +31,7 @@ const TodaysForecast = ({weatherIcons, settings}) => {
             {isPending && <LoadingTodaysForecast />}
             {error && <p>{error}</p>}
             <div className='w-600 grid grid-cols-5 justify-center items-center gap-5'>
-                {hours && hours.map((hour, index) => (
+                {hourly && hourly.map((hour, index) => (
                     <div key={index} className={`flex flex-col gap-2 justify-center items-center duration-300 ease-linear hover:scale-110 cursor-pointer    ${animationIndex === index ? 'scale-110': ''}`}>
                         <div>{hour.time[settings.time]}</div>
                         <img src={weatherIcons[hour.id]} alt="icon not found" title={hour.weather} className='h-80 w-80'/>

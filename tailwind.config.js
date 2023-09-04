@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        obsidian: "#0b131e",
+        "obsidian": "#0b131e",
         "light-obsidian": "#202b3b",
+        "lighter": "#151F2D",
       },
       gridTemplateColumns: {
         'body': '1fr 3fr 3fr',
