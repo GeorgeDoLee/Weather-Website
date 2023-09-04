@@ -6,7 +6,9 @@ const useFetch = (url) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(url)
+        setTimeout(() => {
+            // this setTimeout is here only to demonstrate loading screens. it has no real use and it should be removed  
+            fetch(url)
             .then(res => {
                 if(!res.ok){
                     throw Error('Could not fetch the data');
@@ -23,6 +25,7 @@ const useFetch = (url) => {
                 setData(null);
                 setError(err.message);
             })
+        }, 1000);
     }, [url]);
 
     return { data, isPending, error };

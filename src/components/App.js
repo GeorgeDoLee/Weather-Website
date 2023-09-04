@@ -28,10 +28,9 @@ function App() {
             className="self-start border-0 bg-light-obsidian h-50 w-600 rounded-2xl p-4 outline-none bg-opacity-50"
             onKeyUp={handleEnterPress}
           />
-          {isPending && <p>Loading...</p>}
           {error && <p className="col-start-2 row-start-2">{error}</p>}
-          {weather && <SevenDayForecast weatherIcons={weatherIcons} />}
-          {weather && <Forecast weather={weather} weatherIcons={weatherIcons} />}
+          <SevenDayForecast weatherIcons={weatherIcons} />
+          <Forecast weather={weather} weatherIcons={weatherIcons} isPending={isPending}/>
       </div>
     </div>
   );

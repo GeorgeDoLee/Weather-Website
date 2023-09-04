@@ -7,10 +7,10 @@ import settings from '../assets/navbar-icons/settings.svg';
 
 const Navbar = () => {
     const [options, setOptions] = useState([
-        {icon: weather, name: 'ამინდი'},
-        {icon: hamburger, name: 'ქალაქები'},
-        {icon: map, name: 'რუკა'},
-        {icon: settings, name: 'პარამეტრები'},
+        {icon: weather, name: 'Weather'},
+        {icon: hamburger, name: 'Cities'},
+        {icon: map, name: 'Map'},
+        {icon: settings, name: 'Settings'},
     ])
 
     return (  
@@ -20,7 +20,7 @@ const Navbar = () => {
             <nav className=" flex flex-col gap-50 justify-center items-center ">
 
                 {options.map((option, index) => (
-                    <button key={index} className="cursor-pointer duration-200 ease-linear active:scale-95 hover:scale-105 flex flex-col justify-center items-center gap-2 text-xs">
+                    <button key={index} className="cursor-pointer duration-200 ease-linear active:scale-95 hover:scale-105 flex flex-col justify-center items-center gap-2 text-sm">
                         <img src={option.icon} alt="icon not found" className='h-30 2-30'/> 
                         {option.name}
                     </button>
