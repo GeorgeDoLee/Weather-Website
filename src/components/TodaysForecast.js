@@ -35,7 +35,7 @@ const TodaysForecast = ({weatherIcons, settings}) => {
                     <div key={index} className={`flex flex-col gap-2 justify-center items-center duration-300 ease-linear hover:scale-110 cursor-pointer    ${animationIndex === index ? 'scale-110': ''}`}>
                         <div>{hour.time[settings.time]}</div>
                         <img src={weatherIcons[hour.id]} alt="icon not found" title={hour.weather} className='h-80 w-80'/>
-                        <div>{settings.temp === 'metric'? hour.temperature.C : hour.temperature.F }</div>
+                        <div>{hour.temperature[settings.temp]}</div>
                     </div>
                 ))}
             </div>

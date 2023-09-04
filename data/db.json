@@ -4,8 +4,8 @@
       "day": "Today",
       "weather": "Cloudy",
       "temperature": {
-        "C": "23°C",
-        "F": "73°F"
+        "metric": "23°C",
+        "imperial": "73°F"
       },
       "id": "03d"
     },
@@ -13,8 +13,8 @@
       "day": "Tomorrow",
       "weather": "Cloudy",
       "temperature": {
-        "C": "25°C",
-        "F": "77°F"
+        "metric": "25°C",
+        "imperial": "77°F"
       },
       "id": "03d"
     },
@@ -22,8 +22,8 @@
       "day": "Wednesday",
       "weather": "Rainy",
       "temperature": {
-        "C": "18°C",
-        "F": "64°F"
+        "metric": "18°C",
+        "imperial": "64°F"
       },
       "id": "10d"
     },
@@ -31,8 +31,8 @@
       "day": "Thursday",
       "weather": "Partly Cloudy",
       "temperature": {
-        "C": "28°C",
-        "F": "82°F"
+        "metric": "28°C",
+        "imperial": "82°F"
       },
       "id": "02d"
     },
@@ -40,8 +40,8 @@
       "day": "Friday",
       "weather": "Sunny",
       "temperature": {
-        "C": "32°C",
-        "F": "89.6°F"
+        "metric": "32°C",
+        "imperial": "89.6°F"
       },
       "id": "01d"
     },
@@ -49,8 +49,8 @@
       "day": "Saturday",
       "weather": "Thunderstorms",
       "temperature": {
-        "C": "22°C",
-        "F": "71.6°F"
+        "metric": "22°C",
+        "imperial": "71.6°F"
       },
       "id": "11d"
     },
@@ -58,8 +58,8 @@
       "day": "Sunday",
       "weather": "Partly Cloudy",
       "temperature": {
-        "C": "27°C",
-        "F": "80.6°F"
+        "metric": "27°C",
+        "imperial": "80.6°F"
       },
       "id": "02d"
     }
@@ -72,8 +72,8 @@
       },
       "id": "01d",
       "temperature": {
-        "C": "12°C",
-        "F": "53.6°F"
+        "metric": "12°C",
+        "imperial": "53.6°F"
       },
       "weather": "Sunny"
     },
@@ -84,8 +84,8 @@
       },
       "id": "02d",
       "temperature": {
-        "C": "18°C",
-        "F": "64.4°F"
+        "metric": "18°C",
+        "imperial": "64.4°F"
       },
       "weather": "Partly Cloudy"
     },
@@ -96,8 +96,8 @@
       },
       "id": "03d",
       "temperature": {
-        "C": "22°C",
-        "F": "71.6°F"
+        "metric": "22°C",
+        "imperial": "71.6°F"
       },
       "weather": "Cloudy"
     },
@@ -108,8 +108,8 @@
       },
       "id": "10n",
       "temperature": {
-        "C": "16°C",
-        "F": "60.8°F"
+        "metric": "16°C",
+        "imperial": "60.8°F"
       },
       "weather": "Rainy"
     },
@@ -120,10 +120,10 @@
       },
       "id": "02n",
       "temperature": {
-        "C": "10°C",
-        "F": "50°F"
+        "metric": "10°C",
+        "imperial": "50°F"
       },
       "weather": "Partly Cloudy"
     }
-  ]  
+  ]
 }
