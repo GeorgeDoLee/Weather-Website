@@ -3,71 +3,112 @@
     {
       "day": "Today",
       "weather": "Cloudy",
-      "degree": "23°",
+      "temperature": {
+        "C": "23°C",
+        "F": "73°F"
+      },
       "id": "03d"
     },
     {
       "day": "Tomorrow",
       "weather": "Cloudy",
-      "degree": "25°",
+      "temperature": {
+        "C": "25°C",
+        "F": "77°F"
+      },
       "id": "03d"
     },
     {
       "day": "Wednesday",
       "weather": "Rainy",
-      "degree": "18°",
+      "temperature": {
+        "C": "18°C",
+        "F": "64°F"
+      },
       "id": "10d"
     },
     {
       "day": "Thursday",
       "weather": "Partly Cloudy",
-      "degree": "28°",
+      "temperature": {
+        "C": "28°C",
+        "F": "82°F"
+      },
       "id": "02d"
     },
     {
       "day": "Friday",
       "weather": "Sunny",
-      "degree": "32°",
+      "temperature": {
+        "C": "32°C",
+        "F": "89.6°F"
+      },
       "id": "01d"
     },
     {
       "day": "Saturday",
       "weather": "Thunderstorms",
-      "degree": "22°",
+      "temperature": {
+        "C": "22°C",
+        "F": "71.6°F"
+      },
       "id": "11d"
     },
     {
       "day": "Sunday",
       "weather": "Partly Cloudy",
-      "degree": "27°",
+      "temperature": {
+        "C": "27°C",
+        "F": "80.6°F"
+      },
       "id": "02d"
     }
   ],
-    "todaysForecast": [
-        {
-          "time": "8:00 AM",
-          "id": "01d",
-          "degree": "12°"
-        },
-        {
-          "time": "12:00 PM",
-          "id": "02d",
-          "degree": "18°"
-        },
-        {
-          "time": "4:00 PM",
-          "id": "03d",
-          "degree": "22°"
-        },
-        {
-          "time": "8:00 PM",
-          "id": "02n",
-          "degree": "16°"
-        },
-        {
-          "time": "12:00 AM",
-          "id": "10n",
-          "degree": "10°"
-        }
-      ]
+  "todaysForecast": [
+    {
+      "time": "8:00 AM",
+      "id": "01d",
+      "temperature": {
+        "C": "12°C",
+        "F": "53.6°F"
+      },
+      "weather": "Sunny"
+    },
+    {
+      "time": "12:00 PM",
+      "id": "02d",
+      "temperature": {
+        "C": "18°C",
+        "F": "64.4°F"
+      },
+      "weather": "Partly Cloudy"
+    },
+    {
+      "time": "4:00 PM",
+      "id": "03d",
+      "temperature": {
+        "C": "22°C",
+        "F": "71.6°F"
+      },
+      "weather": "Cloudy"
+    },
+    {
+      "time": "8:00 PM",
+      "id": "02n",
+      "temperature": {
+        "C": "16°C",
+        "F": "60.8°F"
+      },
+      "weather": "Partly Cloudy"
+    },
+    {
+      "time": "12:00 AM",
+      "id": "10n",
+      "temperature": {
+        "C": "10°C",
+        "F": "50°F"
+      },
+      "weather": "Rainy"
+    }
+  ]
 }

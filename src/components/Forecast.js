@@ -1,7 +1,7 @@
 import TodaysForecast from "./TodaysForecast";
 import LoadingForecast from "./loading-components/LoadingForecast";
 
-const Forecast = ({weather, weatherIcons, isPending}) => {
+const Forecast = ({weather, weatherIcons, isPending, units}) => {
 
     return (  
         <div className="self-stretch grid grid-rows-2 justify-center items-center gap-3">
@@ -16,11 +16,11 @@ const Forecast = ({weather, weatherIcons, isPending}) => {
                         
                         <img src={weatherIcons[weather.weather[0].icon]} title={weather.weather[0].description} alt="icon not found" className="row-span-2 self-center justify-self-center h-320  duration-300 hover:scale-105 cursor-pointer"/>
 
-                    <div className="text-5xl self-end justify-self-start mb-2 ml-2">{Math.round(weather.main.temp)}°</div>
+                    <div className="text-5xl self-end justify-self-start mb-2 ml-2">{Math.round(weather.main.temp)}{units === 'metric'? '°C': '°F'}</div>
                     </div>
                 </div>
             }
-            <TodaysForecast weatherIcons={weatherIcons} />
+            <TodaysForecast weatherIcons={weatherIcons} units={units} />
         </div>
     );
 }

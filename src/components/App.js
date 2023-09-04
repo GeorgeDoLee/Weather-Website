@@ -29,8 +29,8 @@ function App() {
             onKeyUp={handleEnterPress}
           />
           {error && <p className="col-start-2 row-start-2">{error}</p>}
-          <SevenDayForecast weatherIcons={weatherIcons} />
-          <Forecast weather={weather} weatherIcons={weatherIcons} isPending={isPending}/>
+          {!error && <SevenDayForecast weatherIcons={weatherIcons} units={units} />}
+          {!error && <Forecast weather={weather} weatherIcons={weatherIcons} isPending={isPending} units={units} />}
       </div>
     </div>
   );

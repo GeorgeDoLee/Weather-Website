@@ -10,7 +10,7 @@ const LoadingForecast = () => {
                 
                 <div className="bg-light-obsidian row-span-2 self-center justify-self-center h-150 w-150 rounded-full animate-pulse"></div>
 
-            <div className="bg-light-obsidian self-end justify-self-start mb-2 ml-2 h-50 w-60 rounded-md animate-pulse"></div>
+                <div className="bg-light-obsidian self-end justify-self-start mb-2 ml-2 h-50 w-100 rounded-md animate-pulse"></div>
             </div>
         </div>
     );
