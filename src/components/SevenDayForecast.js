@@ -32,7 +32,7 @@ const SevenDayForecast = ({weatherIcons, units}) => {
             {error && <p>{error}</p> }
             <div className="justify-self-center self-start grid grid-rows-8">
                 {days && days.map((day, index) => (
-                    <div key={index} className={`self-center justify-self-center grid grid-cols-3 items-center w-350 h-75 border-b-2 last:border-b-0 mt-2 pb-2 duration-300 hover:scale-105 cursor-pointer ${animationIndex == index ? 'scale-105': ''}`}>
+                    <div key={index} className={`self-center justify-self-center grid grid-cols-3 items-center w-350 h-75 border-b-2 last:border-b-0 mt-2 pb-2 duration-300 hover:scale-105 cursor-pointer ${animationIndex === index ? 'scale-105': ''}`}>
                         <h5 className="justify-self-start">{day.day}</h5>
                         <img src={weatherIcons[day.id]} alt="icon not found" title={day.weather} className="justify-self-center h-50"/>
                         <h4 className="justify-self-center">{units === 'metric'? day.temperature.C : day.temperature.F }</h4>

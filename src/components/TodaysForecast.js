@@ -32,7 +32,7 @@ const TodaysForecast = ({weatherIcons, units}) => {
             {error && <p>{error}</p>}
             <div className='w-600 grid grid-cols-5 justify-center items-center gap-5'>
                 {hours && hours.map((hour, index) => (
-                    <div key={index} className={`flex flex-col gap-2 justify-center items-center duration-300 ease-linear hover:scale-110 cursor-pointer    ${animationIndex == index ? 'scale-110': ''}`}>
+                    <div key={index} className={`flex flex-col gap-2 justify-center items-center duration-300 ease-linear hover:scale-110 cursor-pointer    ${animationIndex === index ? 'scale-110': ''}`}>
                         <div>{hour.time}</div>
                         <img src={weatherIcons[hour.id]} alt="icon not found" title={hour.weather} className='h-80 w-80'/>
                         <div>{units === 'metric'? hour.temperature.C : hour.temperature.F }</div>
