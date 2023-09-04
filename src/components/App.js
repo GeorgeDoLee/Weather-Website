@@ -12,7 +12,7 @@ function App() {
   const [city, setCity] = useState('Tbilisi');
   const [settings, setSettings] = useState({
     temp: 'metric',
-    time: '24',
+    time: 24,
     lang: 'en',
   });
 
@@ -24,6 +24,8 @@ function App() {
       event.target.value = '';
     }
   };
+
+  console.log(settings);
 
   return (
     <BrowserRouter>
@@ -40,11 +42,11 @@ function App() {
             <Route path="/" element={
               <>
                 {error && <p className="col-start-2 row-start-2">{error}</p>}
-                {!error && <SevenDayForecast weatherIcons={weatherIcons} units={settings.units} />}
-                {!error && <Forecast weather={weather} weatherIcons={weatherIcons} isPending={isPending} units={settings.units} />}
+                {!error && <SevenDayForecast weatherIcons={weatherIcons} units={settings.temp} />}
+                {!error && <Forecast weather={weather} weatherIcons={weatherIcons} isPending={isPending} settings={settings} />}
               </>
             } />
-            <Route path="/settings" element={<Settings setSettings={setSettings} />} />
+            <Route path="/settings" element={<Settings settings={settings} setSettings={setSettings} />} />
           </Routes>
         </div>
       </div>

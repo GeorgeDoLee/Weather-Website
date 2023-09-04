@@ -66,7 +66,10 @@
   ],
   "todaysForecast": [
     {
-      "time": "8:00 AM",
+      "time": {
+        "24": "08:00",
+        "12": "8:00 AM"
+      },
       "id": "01d",
       "temperature": {
         "C": "12°C",
@@ -75,7 +78,10 @@
       "weather": "Sunny"
     },
     {
-      "time": "12:00 PM",
+      "time": {
+        "24": "12:00",
+        "12": "12:00 PM"
+      },
       "id": "02d",
       "temperature": {
         "C": "18°C",
@@ -84,7 +90,10 @@
       "weather": "Partly Cloudy"
     },
     {
-      "time": "4:00 PM",
+      "time": {
+        "24": "16:00",
+        "12": "4:00 PM"
+      },
       "id": "03d",
       "temperature": {
         "C": "22°C",
@@ -93,22 +102,28 @@
       "weather": "Cloudy"
     },
     {
-      "time": "8:00 PM",
-      "id": "02n",
+      "time": {
+        "24": "20:00",
+        "12": "8:00 PM"
+      },
+      "id": "10n",
       "temperature": {
         "C": "16°C",
         "F": "60.8°F"
       },
-      "weather": "Partly Cloudy"
+      "weather": "Rainy"
     },
     {
-      "time": "12:00 AM",
-      "id": "10n",
+      "time": {
+        "24": "24:00",
+        "12": "12:00 AM"
+      },
+      "id": "02n",
       "temperature": {
         "C": "10°C",
         "F": "50°F"
       },
-      "weather": "Rainy"
+      "weather": "Partly Cloudy"
     }
-  ]
+  ]  
 }
