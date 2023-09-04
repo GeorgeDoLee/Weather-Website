@@ -11,7 +11,7 @@ const Forecast = ({weather, weatherIcons}) => {
                         <div className="text-3xl mt-2">{weather.weather[0].main}</div>
                     </div>
                     
-                    <img src={weatherIcons[weather.weather[0].icon]}  alt="icon not found" className="row-span-2 self-center justify-self-center h-320  duration-300 hover:scale-105 cursor-pointer"/>
+                    <img src={weatherIcons[weather.weather[0].icon]} title={weather.weather[0].description} alt="icon not found" className="row-span-2 self-center justify-self-center h-320  duration-300 hover:scale-105 cursor-pointer"/>
 
                    <div className="text-5xl self-end justify-self-start mb-2 ml-2">{Math.round(weather.main.temp)}°</div>
                 </div>
