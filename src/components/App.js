@@ -17,9 +17,9 @@ function App() {
     lang: 'en',
   });
 
-  const { data: weather, isPending, error } = useFetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${settings.temp}`);
+  console.log(`ciiityyyy - ${city}`);
 
-  console.log(settings);
+  const { data: weather, isPending, error } = useFetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${settings.temp}`);
 
   return (
     <BrowserRouter>

@@ -22,19 +22,17 @@ const SearchField = ({ setCity }) => {
     }
   };
 
-  const search = () => {
-    if (filteredCities.length > 0) {
-        const selectedCity = filteredCities[selectedSuggestion];
-        setCity(selectedCity);
-        setSearchText(selectedCity);
-        setShowSuggestions(false);
-      }
-  }
-
   const handleKeyPress = (event) => {
     if (event.key === 'Tab' || event.key === 'Enter') {
         event.preventDefault();
-        search();
+        if (filteredCities.length > 0 || event.key === 'Tab') {
+            const selectedCity = filteredCities[selectedSuggestion];
+            setCity(selectedCity);
+            setSearchText(selectedCity);
+        } else {
+            setCity(searchText);
+        }
+        setShowSuggestions(false);
         setSelectedSuggestion(0);
     } else if (event.key === 'ArrowDown') {
       event.preventDefault();
@@ -79,7 +77,7 @@ const SearchField = ({ setCity }) => {
               {error}
             </h1>
           )}
-          {filteredCities.length > 0 && filteredCities.map((city, index) => (
+          {filteredCities && filteredCities.length > 0 && filteredCities.map((city, index) => (
             <h1
               key={index}
               onClick={() => {
