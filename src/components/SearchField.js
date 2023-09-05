@@ -13,7 +13,7 @@ const SearchField = ({ setCity }) => {
     const value = event.target.value;
     setSearchText(value);
 
-    if (value) {
+    if (value && cities) {
       setShowSuggestions(true);
       const filtered = cities.filter((city) => city.toLowerCase().includes(value.toLowerCase())).slice(0, maxSuggestions);
       setFilteredCities(filtered);
@@ -56,7 +56,7 @@ const SearchField = ({ setCity }) => {
       <input
         type="text"
         placeholder="Search for cities"
-        className="self-start border-0 bg-light-obsidian h-50 w-600 rounded-2xl p-4 outline-none bg-opacity-50"
+        className="border-0 bg-light-obsidian h-[50px] w-[600px] rounded-2xl p-4 outline-none bg-opacity-50"
         value={searchText}
         onClick={() => {
           setSearchText('');
@@ -66,12 +66,7 @@ const SearchField = ({ setCity }) => {
         onKeyDown={handleKeyPress}
       />
       {showSuggestions && (
-        <div className="absolute z-50 max-w-600 bg-lighter rounded-2xl mt-2 grid grid-cols-auto justify-items-stretch items-center">
-          {isPending && (
-            <h1 className="p-3 h-50">
-              Loading..
-            </h1>
-          )}
+        <div className="absolute z-50 max-w-[600px] bg-lighter rounded-2xl mt-2 grid grid-cols-auto justify-items-stretch items-center">
           {error && (
             <h1 className={`p-3 h-50`}>
               {error}

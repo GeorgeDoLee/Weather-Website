@@ -14,15 +14,15 @@ const Navbar = () => {
     ];
 
     return (  
-        <div className='self-stretch row-span-2 bg-light-obsidian p-8 w-100 rounded-3xl grid grid-rows-body justify-center items-center bg-opacity-50'>
-            <img src={logo} alt="icon not found" className='justify-self-center self-start h-60 w-60'/>
+        <div className='self-stretch row-span-2 bg-light-obsidian p-8 w-[100px] rounded-3xl grid grid-rows-body justify-center items-center bg-opacity-50'>
+            <img src={logo} alt="icon not found" className='justify-self-center self-start h-[60px] w-[60px]'/>
 
-            <nav className=" flex flex-col gap-50 justify-center items-center ">
+            <nav className=" flex flex-col gap-[50px] justify-center items-center ">
 
                 {options.map((option, index) => (
                     <Link to={option.link}>
                         <button key={index} className="cursor-pointer duration-200 ease-linear active:scale-95 hover:scale-105 flex flex-col justify-center items-center gap-2 text-sm">
-                            <img src={option.icon} alt="icon not found" className='h-30 2-30'/> 
+                            <img src={option.icon} alt="icon not found" className='h-[30px] w-[30px]'/> 
                             {option.name}
                         </button>
                     </Link>

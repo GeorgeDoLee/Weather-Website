@@ -7,6 +7,7 @@ import SevenDayForecast from "./SevenDayForecast";
 import weatherIcons from "../assets/weather-icons/icons";
 import Settings from "./Settings";
 import SearchField from "./SearchField";
+import Cities from "./Cities";
 
 function App() {
   const apiKey = "ddcaa1c34d46125ca8d63b5bc99789ad";
@@ -17,14 +18,12 @@ function App() {
     lang: 'en',
   });
 
-  console.log(`ciiityyyy - ${city}`);
-
   const { data: weather, isPending, error } = useFetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${settings.temp}`);
 
   return (
     <BrowserRouter>
       <div className="w-screen h-screen flex justify-center items-center">
-        <div className="w-1300 h-650 bg-obsidian text-white grid grid-cols-body grid-rows-body gap-x-50 justify-items-center items-center relative">
+        <div className="w-[1300px] h-[650px] bg-obsidian text-white grid grid-cols-body grid-rows-body gap-x-[50px] justify-items-center items-center relative ">
           <Navbar />
           <SearchField setCity={setCity} />
           <Routes>
@@ -36,6 +35,7 @@ function App() {
               </>
             } />
             <Route path="/settings" element={<Settings settings={settings} setSettings={setSettings} />} />
+            <Route path="/cities" element={<Cities settings={settings} />} />
           </Routes>
         </div>
       </div>
