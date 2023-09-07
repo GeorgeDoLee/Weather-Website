@@ -23,7 +23,7 @@ const SearchField = ({ setCity }) => {
   };
 
   const handleKeyPress = (event) => {
-    if (event.key === 'Tab' || event.key === 'Enter') {
+    if ((event.key === 'Tab' || event.key === 'Enter') && event.target.value ) {
         event.preventDefault();
         if (filteredCities.length > 0 || event.key === 'Tab') {
             const selectedCity = filteredCities[selectedSuggestion];
@@ -34,6 +34,7 @@ const SearchField = ({ setCity }) => {
         }
         setShowSuggestions(false);
         setSelectedSuggestion(0);
+        setFilteredCities([]);
     } else if (event.key === 'ArrowDown') {
       event.preventDefault();
       if (selectedSuggestion === filteredCities.length - 1) {
